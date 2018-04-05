@@ -1,14 +1,43 @@
-# Creative Theme for Jekyll
+# 프로젝트명
+> invesume team repository offcial website
 
-A Jekyll implementation of the [Creative Theme](http://startbootstrap.com/template-overviews/creative/) template by [Start Bootstrap](http://startbootstrap.com).
+![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg)
+![GitHub issue last update](https://img.shields.io/github/issues/detail/last-update/badges/shields/979.svg)
+![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg)
+![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg)
 
-Creative is a one page Bootstrap theme for creatives, small businesses, and other multipurpose uses.
-The theme includes a number of rich features and plugins that you can use as a great boilerplate for your next Jekyll project! 
 
-See it live in action at <https://volny.github.io/creative-theme-jekyll/>
+인베슘에서 운영하는 공개저장소를 소개하는 웹사이트 입니다.
 
-## To use the Creative Theme template in your project
+웹브라우저에서 아래의 주소로 접근가능합니다.
 
-- Start by adding your info in `_config.yml`
-- In `_layouts/front.html` reorder or remove section as you prefer.
+url : http://site.hcall.io/
 
+
+![](./img/main.png)
+
+
+## 업데이트 내역
+
+* 0.2.0
+    * 리뉴얼 디자인 작업 반영
+* 0.1.1
+    * 메인 이미지 추가
+* 0.1.0
+    * 첫 사이트 배포 
+
+
+## Developer
+
+김형채 – [@chaeya 주소](https://twitter.com/chaeya) – hckim@invesume.com
+
+
+## 기여 방법
+
+1. (<https://github.com/yourname/yourproject/fork>)을 포크합니다.
+2. (`git checkout -b feature/fooBar`) 명령어로 새 브랜치를 만드세요.
+3. (`git commit -am 'Add some fooBar'`) 명령어로 커밋하세요.
+4. (`git push origin feature/fooBar`) 명령어로 브랜치에 푸시하세요. 
+5. 풀리퀘스트를 보내주세요.
