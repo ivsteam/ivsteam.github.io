@@ -1,12 +1,11 @@
 # 프로젝트명
 > invesume team repository offcial website
 
-![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/cdnjs/cdnjs.svg)
-![GitHub issue last update](https://img.shields.io/github/issues/detail/last-update/badges/shields/979.svg)
-![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![GitHub top language](https://img.shields.io/github/languages/top/badges/shields.svg)
-![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/phaser-craft.min.js.svg)
+[![GitHub issues](https://img.shields.io/github/issues/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/issues)
+[![GitHub forks](https://img.shields.io/github/forks/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/network)
+[![GitHub stars](https://img.shields.io/github/stars/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/stargazers)
+[![GitHub license](https://img.shields.io/github/license/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/blob/master/LICENCE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/ivsteam/ivsteam.github.io.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fivsteam%2Fivsteam.github.io)
 
 
 인베슘에서 운영하는 공개저장소를 소개하는 웹사이트 입니다.
