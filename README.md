@@ -12,7 +12,7 @@
 
 웹브라우저에서 아래의 주소로 접근가능합니다.
 
-url : http://site.hcall.io/
+url : http://oss.invesume.com
 
 
 ![](./img/main.png)
