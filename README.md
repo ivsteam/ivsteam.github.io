@@ -5,7 +5,7 @@
 invesume team repository offcial website
 
 인베슘은 깃헙을 이용하여 웹사이트를 운영하고 있습니다.
-홈페이지 이용 중 사이트에 대한 버그를 발견하셨거나 개선의견이 있으신 경우 [issues](https://img.shields.io/github/issues/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/issues)를 이용하여 알려주시면 빠르게 개선하겠습니다.
+홈페이지 이용 중 사이트에 대한 버그를 발견하셨거나 개선의견이 있으신 경우  [issues](https://img.shields.io/github/issues/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/issues)를 이용하여 알려주시면 빠르게 개선하겠습니다.
 
 
 
