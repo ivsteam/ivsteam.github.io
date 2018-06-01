@@ -5,14 +5,8 @@
 invesume team repository offcial website
 
 인베슘은 깃헙을 이용하여 웹사이트를 운영하고 있습니다.
-홈페이지 이용 중 사이트에 대한 버그를 발견하셨거나 개선의견이 있으신 경우 상단의 이슈탭을 이용하여 알려주시면 빠르게 개선하겠습니다.
+홈페이지 이용 중 사이트에 대한 버그를 발견하셨거나 개선의견이 있으신 경우 [issues](https://img.shields.io/github/issues/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/issues)를 이용하여 알려주시면 빠르게 개선하겠습니다.
 
-
-[![GitHub issues](https://img.shields.io/github/issues/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/issues)
-[![GitHub forks](https://img.shields.io/github/forks/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/network)
-[![GitHub stars](https://img.shields.io/github/stars/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/stargazers)
-[![GitHub license](https://img.shields.io/github/license/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/blob/master/LICENCE)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/ivsteam/ivsteam.github.io.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fivsteam%2Fivsteam.github.io)
 
 
 ## 제품 및 서비스
