@@ -1,5 +1,12 @@
-# 프로젝트명
-> invesume team repository offcial website
+![](./img/main.png)
+
+## 인베슘 웹사이트
+
+invesume team repository offcial website
+
+인베슘은 깃헙을 이용하여 웹사이트를 운영하고 있습니다.
+홈페이지 이용 중 사이트에 대한 버그를 발견하셨거나 개선의견이 있으신 경우 상단의 이슈탭을 이용하여 알려주시면 빠르게 개선하겠습니다.
+
 
 [![GitHub issues](https://img.shields.io/github/issues/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/issues)
 [![GitHub forks](https://img.shields.io/github/forks/ivsteam/ivsteam.github.io.svg)](https://github.com/ivsteam/ivsteam.github.io/network)
@@ -8,24 +15,27 @@
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/ivsteam/ivsteam.github.io.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fivsteam%2Fivsteam.github.io)
 
 
-인베슘에서 운영하는 공개저장소를 소개하는 웹사이트 입니다.
+## 제품 및 서비스
 
-웹브라우저에서 아래의 주소로 접근가능합니다.
+인베슘은 다음과 같은 제품과 서비스를 제공합니다.
 
-url : http://oss.invesume.com
+- [Atlassian ALM](https://invesume.com/atlassian)
+- [HamoniKR Linux Desktop](http://hamonikr.org)
+- [Hamonia Media Weaver](https://hamonia.kr)
+- [Hotel Click to Call](https://hcall.io)
+- [ONJ](http://onj.io/)
 
 
-![](./img/main.png)
+## 제품 또는 서비스 문의
+
+인베슘에서 제공하는 제품이나 서비스에 대한 문의 사항이 있으신 경우 [서비스데스크](http://pms.invesume.com:8080/servicedesk/customer/portal/10)를 통해 문의하시면 해당 부문의 담당자가 빠르게 답변을 드립니다. 제품이나 서비스와 관련하여 도움이 필요하신 경우 자유롭게 문의해 주세요
+
+## 채용
+
+자사의 서비스에 동참하고 싶은 팀원을 상시 채용을 하고 있습니다. 
+저희 팀에 관심이 있으신분은 언제든 hckim@invesume.com 으로 이력서와 소개서를 보내주세요.
 
 
-## 업데이트 내역
-
-* 0.2.0
-    * 리뉴얼 디자인 작업 반영
-* 0.1.1
-    * 메인 이미지 추가
-* 0.1.0
-    * 첫 사이트 배포 
 
 
 ## Developer
