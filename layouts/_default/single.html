@@ -1,0 +1,450 @@
+{{ define "main" }}
+{{ if eq .Section "customers" }}
+<!-- AI Platform Case Studies -->
+<section class="case-studies-hero bg-light py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+            <h2>AI.RUN/Hamonize 도입사례</h2>
+            <p class="lead">Sovereign AI 플랫폼으로 실제 비즈니스를 혁신한 성공 사례</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- 강진군청 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="/img/case-stories/강진군청.png" alt="강진군청" class="img-fluid">
+                    </div>
+                    <div class="case-content p-4">
+                        <h5 class="case-title">강진군청</h5>
+                        <p class="case-subtitle text-muted small mb-2">챗봇을 넘어, 신청서 자동작성까지 수행하는 행정형 AI</p>
+                        <p class="case-description">빈집관리와 리모델링 신청절차 전용 도구를 개발하여 AI 챗봇 → Tools 호출 → RPA 연동 → 신청서 자동작성 흐름으로 업무를 연결</p>
+                        <ul class="case-features">
+                            <li>민원인 절차 이해와 서류 준비 부담 감소</li>
+                            <li>담당자 지원 업무 시간 단축</li>
+                            <li>행정서비스 "정보 제공"에서 "업무 처리 지원"으로 고도화</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 한국수력원자력 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="/img/case-stories/한국수력원자력.png" alt="한국수력원자력" class="img-fluid">
+                    </div>
+                    <div class="case-content p-4">
+                        <h5 class="case-title">한국수력원자력</h5>
+                        <p class="case-subtitle text-muted small mb-2">'읽지 못하는 AI'에서, 실시간 대답하는 교육형 AI로 전환</p>
+                        <p class="case-description">문서 레이아웃 분석 모델과 멀티모달 지원 모델을 활용해 텍스트뿐만 아니라 시각자료 맥락까지 함께 해석</p>
+                        <ul class="case-features">
+                            <li>강의자료 이해 기반 답변 정확도 향상</li>
+                            <li>단순 키워드 검색이 아닌 맥락 기반 학습 지원</li>
+                            <li>Graph RAG를 통해 강의 주제, 개념, 관련 문서 간 연결관계 반영</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 덕원산업 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="/img/case-stories/덕원산업.png" alt="덕원산업" class="img-fluid">
+                    </div>
+                    <div class="case-content p-4">
+                        <h5 class="case-title">덕원산업</h5>
+                        <p class="case-subtitle text-muted small mb-2">현장 검수·품질관리, OCR과 Vision AI로 자동 분석 체계 구축</p>
+                        <p class="case-description">OCR과 Vision LLM을 활용하여 현장 데이터 자동 분석하고 검수데이터와 시각 정보를 함께 해석하여 지능형 품질관리 체계 구축</p>
+                        <ul class="case-features">
+                            <li>현장 검수 업무 속도와 일관성 향상</li>
+                            <li>이미지·문서 혼합 데이터 분석 자동화</li>
+                            <li>품질관리 업무 표준화 및 정확도 개선</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 오리지네이티드 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="/img/case-stories/오리지네이티드.png" alt="오리지네이티드" class="img-fluid">
+                    </div>
+                    <div class="case-content p-4">
+                        <h5 class="case-title">오리지네이티드</h5>
+                        <p class="case-subtitle text-muted small mb-2">복잡한 태양광 업무 데이터를 연결한 업무형 문서생성 AI</p>
+                        <p class="case-description">별도의 업무 연산 처리 레이어를 통해 실제 업무에 필요한 계산 로직 수행하고 계산 결과를 바탕으로 기업 고유의 PowerPoint 템플릿에 맞춘 문서 자동 생성</p>
+                        <ul class="case-features">
+                            <li>결과물 형식과 품질을 기업 표준에 맞게 일관되게 유지</li>
+                            <li>담당자 계산과 작성 대신 검토와 의사결정에 집중</li>
+                            <li>복잡한 연산 규칙과 회사 고유 문서 형식 반영</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KYOCERA건강검진센터 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="/img/case-stories/KYOCERA건강검진센터.png" alt="KYOCERA건강검진센터" class="img-fluid">
+                    </div>
+                    <div class="case-content p-4">
+                        <h5 class="case-title">KYOCERA건강검진센터</h5>
+                        <p class="case-subtitle text-muted small mb-2">대량 건강검진기록, 분석·리포트형 AI 자산으로 전환</p>
+                        <p class="case-description">건강검진 데이터를 AI 분석 가능 구조로 정리하고 기록에서 필요한 정보와 패턴을 빠르게 추출</p>
+                        <ul class="case-features">
+                            <li>데이터 관리 효율 향상, 대량 기록 기반 분석</li>
+                            <li>반복적 데이터 정리 업무 감소</li>
+                            <li>단순 저장 데이터를 활용 가능한 의료·헬스케어 지식 자산으로 전환</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 비전아이티 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="/img/case-stories/비전아이티.png" alt="비전아이티" class="img-fluid">
+                    </div>
+                    <div class="case-content p-4">
+                        <h5 class="case-title">비전아이티</h5>
+                        <p class="case-subtitle text-muted small mb-2">설비관리지식, 담당자 경험 의존에서 AI 자동점검지원</p>
+                        <p class="case-description">도메인 특화 설비 DB와 QA 데이터를 바탕으로 설비 챗봇 구축하고 고장 데이터베이스와 과거 사례를 검색해 자동 점검 보고서 생성</p>
+                        <ul class="case-features">
+                            <li>설비 관련 정보 접근 속도 향상</li>
+                            <li>장애 원인 확인과 점검 보고 업무 효율화</li>
+                            <li>숙련자 의존도 낮추고 지식의 재사용성 강화</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 교보증권 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="/img/case-stories/교보증권.png" alt="교보증권" class="img-fluid">
+                    </div>
+                    <div class="case-content p-4">
+                        <h5 class="case-title">교보증권</h5>
+                        <p class="case-subtitle text-muted small mb-2">ESG·규제 대응 리포트, AI 평가 에이전트로 혁신</p>
+                        <p class="case-description">EEIOA 평가 기준을 반영한 AI 에이전트 적용, 관련 데이터와 기준 문서를 AI가 함께 참조하여 탄소배출량 자동 집계</p>
+                        <ul class="case-features">
+                            <li>ESG 보고 준비 시간 단축, 수작업 집계 오류 가능성 감소</li>
+                            <li>국제표준기준에 맞춘 리포트 초안 자동 생성</li>
+                            <li>규제 대응형 보고체계 자동화로 업무 신뢰성과 일관성 향상</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Original Stats Section -->
+<section class="customers-stats py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+                <div class="stat-card">
+                    <div class="stat-number">12,500+</div>
+                    <div class="stat-label">국방부 하모니카OS 구축</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="stat-card">
+                    <div class="stat-number">25만+</div>
+                    <div class="stat-label">하모니카OS 다운로드</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">공공기관 고객사</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-card">
+                    <div class="stat-number">GS 인증</div>
+                    <div class="stat-label">1등급 획득</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="customers-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2>공공기관</h2>
+            <p class="lead">정부 및 공공기관의 디지털 전환을 지원합니다</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                <div class="customer-card">
+                    <h4>국방부</h4>
+                    <p class="text-muted">사이버지식정보방 하모니카OS 구축 및 유지관리</p>
+                    <ul class="customer-features">
+                        <li>사이버지식정보방 하모니카OS 구축 (12,500대)</li>
+                        <li>하모나이즈 SaaS 도입</li>
+                        <li>원격 PC 통합 관리 서비스</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="customer-card">
+                    <h4>과학기술정보통신부</h4>
+                    <p class="text-muted">개방형 OS 도입 시범사업 및 기술 지원</p>
+                    <ul class="customer-features">
+                        <li>개방형 OS 도입 시범사업</li>
+                        <li>하모니카 보급 확산 지원</li>
+                        <li>문서 호환성 조사 및 개선</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="customer-card">
+                    <h4>농림축산식품부</h4>
+                    <p class="text-muted">개방형 OS 보급 시범사업 (2016-현재)</p>
+                    <ul class="customer-features">
+                        <li>개방형OS 기반 스마트워크 환경 구축</li>
+                        <li>실제 행정 업무 환경 적용 테스트</li>
+                        <li>교육 및 기술 지원</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ else if eq .Section "news" }}
+<section class="news-detail py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <article class="news-article">
+                    <div class="news-header mb-4">
+                        <span class="badge bg-primary mb-2">{{ .Params.category }}</span>
+                        <h1 class="news-title">{{ .Title }}</h1>
+                        <p class="text-muted">{{ .Date.Format "2006-01-02" }}</p>
+                    </div>
+
+                    <div class="news-content">
+                        {{ .Content }}
+                    </div>
+
+                    <div class="news-navigation mt-5">
+                        <a href="/news/" class="btn btn-outline-primary">
+                            <i class="fas fa-arrow-left me-2"></i>뉴스 목록으로
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ else if eq .Section "contact" }}
+<section class="contact-info py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <div class="contact-details">
+                    <h3 class="mb-4">연락 정보</h3>
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-building fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">회사명</h5>
+                                <p class="text-muted mb-0">(주)인베슘</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">전화</h5>
+                                <p class="text-muted mb-0">02-2039-3977</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">이메일</h5>
+                                <p class="text-muted mb-0">sales@invesume.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <div class="contact-form-wrapper">
+                    <h3 class="mb-4">문의하기</h3>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">이름 *</label>
+                            <input type="text" class="form-control" id="name" name="name" required data-fs-field>
+                            <span class="text-danger small d-none" data-fs-error="name"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">이메일 *</label>
+                            <input type="email" class="form-control" id="email" name="email" required data-fs-field>
+                            <span class="text-danger small d-none" data-fs-error="email"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">문의 내용 *</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required data-fs-field></textarea>
+                            <span class="text-danger small d-none" data-fs-error="message"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" data-fs-submit-btn>
+                            <span class="btn-text">문의 보내기</span>
+                            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        </button>
+                    </form>
+
+                    <!-- Success Modal -->
+                    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title" id="successModalLabel">문의 접수 완료</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="mb-3">
+                                        <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+                                    </div>
+                                    <h4 class="mb-3">문의가 성공적으로 전송되었습니다!</h4>
+                                    <p class="text-muted">보내주신 문의 내용을 확인하고, 빠른 시일 내에 담당자가 답변 드리겠습니다.</p>
+                                    <p class="text-muted small mb-0">문의 번호: <span id="inquiry-id"></span></p>
+                                </div>
+                                <div class="modal-footer border-0 justify-content-center">
+                                    <button type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Error Modal -->
+                    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title" id="errorModalLabel">전송 실패</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="mb-3">
+                                        <i class="fas fa-exclamation-circle text-danger" style="font-size: 4rem;"></i>
+                                    </div>
+                                    <h4 class="mb-3">전송 중 오류가 발생했습니다</h4>
+                                    <p class="text-muted">잠시 후 다시 시도해 주시거나, 아래 연락처로 직접 문의해 주세요.</p>
+                                    <p class="text-muted small mb-0">
+                                        <i class="fas fa-phone me-2"></i>02-2039-3977<br>
+                                        <i class="fas fa-envelope me-2"></i>sales@invesume.com
+                                    </p>
+                                </div>
+                                <div class="modal-footer border-0 justify-content-center">
+                                    <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+                    formspree('initForm', {
+                        formElement: '#contact-form',
+                        formId: 'mbdpedbd',
+                        beforeSubmit: function() {
+                            const btn = document.querySelector('#contact-form [data-fs-submit-btn]');
+                            const btnText = btn.querySelector('.btn-text');
+                            const spinner = btn.querySelector('.spinner-border');
+                            btn.disabled = true;
+                            btnText.classList.add('d-none');
+                            spinner.classList.remove('d-none');
+                        },
+                        onSuccess: function() {
+                            const btn = document.querySelector('#contact-form [data-fs-submit-btn]');
+                            const btnText = btn.querySelector('.btn-text');
+                            const spinner = btn.querySelector('.spinner-border');
+                            btn.disabled = false;
+                            btnText.classList.remove('d-none');
+                            spinner.classList.add('d-none');
+
+                            // Generate inquiry ID
+                            const inquiryId = 'INV-' + Date.now().toString(36).toUpperCase();
+                            document.getElementById('inquiry-id').textContent = inquiryId;
+
+                            // Show success modal
+                            const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                            successModal.show();
+
+                            // Reset form
+                            document.getElementById('contact-form').reset();
+                        },
+                        onError: function() {
+                            const btn = document.querySelector('#contact-form [data-fs-submit-btn]');
+                            const btnText = btn.querySelector('.btn-text');
+                            const spinner = btn.querySelector('.spinner-border');
+                            btn.disabled = false;
+                            btnText.classList.remove('d-none');
+                            spinner.classList.add('d-none');
+
+                            // Show error modal
+                            const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+                            errorModal.show();
+                        }
+                    });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ else if or (eq .Title "개인정보 처리방침") (eq .Title "이용약관") }}
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="page-legal">
+                    <h1>{{ .Title }}</h1>
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ else }}
+<section class="section-header py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>{{ .Title }}</h1>
+                <p>{{ .Content }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

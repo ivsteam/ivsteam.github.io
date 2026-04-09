@@ -1,0 +1,936 @@
+{{ define "main" }}
+{{ if eq .Section "products" }}
+<section class="products-section py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Product 1: AI.RUN / Hamonize -->
+            <div class="col-12 mb-5" data-aos="fade-up" id="ai-platform">
+                <div class="product-card-featured">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <div class="product-image">
+                                <img src="/img/products/product-1-resized.jpg" alt="AI.RUN / Hamonize" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="product-content p-4">
+                                <span class="product-badge bg-primary">AI Platform</span>
+                                <h3 class="product-title">AI.RUN / Hamonize</h3>
+                                <h4 class="product-subtitle text-muted mb-3">Sovereign AI 플랫폼</h4>
+                                <p class="product-description">
+                                    데이터는 사내에 그대로 두고 초거대 AI를 활용하는 Sovereign AI 플랫폼입니다.
+                                    기업의 데이터 프라이버시를 보장하며, 온프레미스 환경에서 LLM 서비스를 제공합니다.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-item">
+                                        <i class="fas fa-shield-alt text-primary"></i>
+                                        <span><strong>데이터 프라이버시 보호:</strong> 데이터 유출 없이 사내 서버에서 AI 활용</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-server text-primary"></i>
+                                        <span><strong>온프레미스 배포:</strong> 인터넷 연결 없는 폐쇄망 환경 지원</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-brain text-primary"></i>
+                                        <span><strong>다양한 LLM 지원:</strong> Llama 3, Qwen, Mixtral 등 오픈소스 모델 탑재</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-tachometer-alt text-primary"></i>
+                                        <span><strong>GPU 오케스트레이션:</strong> 효율적인 GPU 자원 관리 및 모델 스케줄링</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-code text-primary"></i>
+                                        <span><strong>RAG & 코드 생성:</strong> 문서 검색 및 코드 생성 기능 제공</span>
+                                    </div>
+                                </div>
+                                <div class="product-cta mt-4">
+                                    <a href="https://hamonize.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                        <i class="fas fa-external-link-alt me-2"></i>바로가기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: HamoniKR OS -->
+            <div class="col-12 mb-5" data-aos="fade-up" data-aos-delay="100" id="hamonikr-os">
+                <div class="product-card-featured">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <div class="product-image">
+                                <img src="/img/products/product-2-resized.png" alt="HamoniKR OS" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="product-content p-4">
+                                <span class="product-badge bg-success">OS</span>
+                                <h3 class="product-title">HamoniKR OS</h3>
+                                <h4 class="product-subtitle text-muted mb-3">개방형 데스크톱 OS</h4>
+                                <p class="product-description">
+                                    한국어 사용자 환경에 최적화된 개방형 운영체제입니다. 25만+ 다운로드, GS 인증 1등급을 획득했으며,
+                                    공공기관 및 기업의 디지털 전환을 지원합니다.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-item">
+                                        <i class="fas fa-globe text-success"></i>
+                                        <span><strong>한국어 완벽 지원:</strong> 한글 입력기, 한글 폰트, 한글 문서 호환</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-lock text-success"></i>
+                                        <span><strong>3단계 강력한 보안:</strong> 보안 부팅, 보안 스토리지, 실행 보호</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-certificate text-success"></i>
+                                        <span><strong>GS 인증 1등급:</strong> 국가 공인 인증 획득, 공공기관 납품 실적</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-file-alt text-success"></i>
+                                        <span><strong>문서 호환성:</strong> HWP, MS Office 등 다양한 문서格式 지원</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-desktop text-success"></i>
+                                        <span><strong>데스크톱 환경:</strong> GNOME, KDE 등 다양한 데스크톱 환경 제공</span>
+                                    </div>
+                                </div>
+                                <div class="product-cta mt-4">
+                                    <a href="https://hamonikr.org" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+                                        <i class="fas fa-users me-2"></i>바로가기
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: 오픈소스 거버넌스 컨설팅 -->
+            <div class="col-12 mb-5" data-aos="fade-up" data-aos-delay="200" id="consulting">
+                <div class="product-card-featured">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-md-4">
+                            <div class="product-image">
+                                <img src="/img/products/product-3-resized.png" alt="오픈소스 거버넌스 컨설팅" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="product-content p-4">
+                                <span class="product-badge bg-info">Consulting</span>
+                                <h3 class="product-title">오픈소스 거버넌스 컨설팅</h3>
+                                <h4 class="product-subtitle text-muted mb-3">공개SW 기반 프로젝트 컨설팅</h4>
+                                <p class="product-description">
+                                    오픈소스SW 도입 및 활용 전 과정을 지원하는 전문 컨설팅 서비스입니다.
+                                    공공기관 및 기업의 공개SW 프로젝트 성공적인 이행을 돕습니다.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-item">
+                                        <i class="fas fa-sitemap text-info"></i>
+                                        <span><strong>오픈소스 거버넌스 구축:</strong> 조직에 맞는 거버넌스 체계 수립 및 운영</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-balance-scale text-info"></i>
+                                        <span><strong>라이선스 컴플라이언스:</strong> 오픈소스 라이선스 검토 및 준수 지원</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-graduation-cap text-info"></i>
+                                        <span><strong>교육 및 역량 강화:</strong> 오픈소스 활용 교육 프로그램 제공</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-code-branch text-info"></i>
+                                        <span><strong>기술 컨설팅:</strong> 오픈소스 기술 스택 선정 및 아키텍처 설계</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-users text-info"></i>
+                                        <span><strong>커뮤니티 구축:</strong> 내부 오픈소스 커뮤니티 조성 및 운영 지원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ else if eq .Section "customers" }}
+<!-- Case Studies Tabs Section -->
+<section class="case-studies-tabs-hero bg-light" style="margin-top: -120px; padding-top: 120px; padding-bottom: 60px;">
+    <div class="container">
+        <div class="section-header text-center mb-5" data-aos="fade-up">
+            <h2>제품 도입사례</h2>
+            <p class="lead">인베슘의 솔루션을 통해 비즈니스 혁신을 이룬 성공 사례</p>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="caseStudiesTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="hamonikr-tab" data-bs-toggle="tab" data-bs-target="#hamonikr" type="button" role="tab" aria-controls="hamonikr" aria-selected="false">
+                    <i class="fas fa-desktop me-2"></i>하모니카OS 도입사례
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="aiplatform-tab" data-bs-toggle="tab" data-bs-target="#aiplatform" type="button" role="tab" aria-controls="aiplatform" aria-selected="true">
+                    <i class="fas fa-robot me-2"></i>AI.RUN/Hamonize 도입사례
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="caseStudiesTabsContent">
+            <!-- HamoniKR OS Tab -->
+            <div class="tab-pane fade" id="hamonikr" role="tabpanel" aria-labelledby="hamonikr-tab">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="table-dark">
+                                    <tr>
+                                        <th>분야</th>
+                                        <th>고객사</th>
+                                        <th>상세내용</th>
+                                        <th>수량</th>
+                                        <th>비고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2"><strong>공공·교육</strong></td>
+                                        <td><strong>국방부</strong></td>
+                                        <td>사이버지식정보방 PC</td>
+                                        <td>12,500대</td>
+                                        <td rowspan="2">원격지 PC 통합관리 솔루션 포함</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>사이버지식정보방 운영 서버</td>
+                                        <td>237대</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="16"><strong>민간 및 협업</strong></td>
+                                        <td>㈜스마일서브</td>
+                                        <td>Iwinv 클라우드PC VDI 서비스 (가상데스크톱 PC)</td>
+                                        <td>-</td>
+                                        <td>VMS OS 및 클라이언트PC에 적용</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VIVEex</td>
+                                        <td>포스코ICT 생산설비 CCTV 모니터링</td>
+                                        <td>421대</td>
+                                        <td>서버 및 PC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>삼성전기(수원)</td>
+                                        <td>지능형 영상관제시스템</td>
+                                        <td>10대</td>
+                                        <td>서버 및 PC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>부광약품㈜</td>
+                                        <td>전국 11개 지점 업무용PC</td>
+                                        <td>130대</td>
+                                        <td>원격지 PC 통합관리 솔루션 포함</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TouchCloud</td>
+                                        <td>대만 AI영상분석 솔루션 운영체제 적용</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>블루커뮤니케이션</td>
+                                        <td>교육 콘텐츠 플랫폼 운영체제 적용 (블록코딩, 로봇제어)</td>
+                                        <td>-</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>한국IT융합연구원</td>
+                                        <td>하모니카OS, 오픈소스를 적용한 전자칠판</td>
+                                        <td>1대</td>
+                                        <td>전자칠판 HW,SW</td>
+                                    </tr>
+                                    <tr>
+                                        <td>대교CNS</td>
+                                        <td>격오지 화상면회 및 사이버지식정보방</td>
+                                        <td>138대</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>과학기술정보통신부</td>
+                                        <td>개방형OS 시범운영 사업</td>
+                                        <td>30대</td>
+                                        <td>PC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>문화체육관광부</td>
+                                        <td>직원 업무용PC</td>
+                                        <td>1대</td>
+                                        <td>테스트용 PC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>국민건강보험공단</td>
+                                        <td>직원 인터넷용PC</td>
+                                        <td>59대</td>
+                                        <td>PC</td>
+                                    </tr>
+                                    <tr>
+                                        <td>부산시설공단</td>
+                                        <td>백업서버</td>
+                                        <td>2대</td>
+                                        <td>서버용</td>
+                                    </tr>
+                                    <tr>
+                                        <td>전남도청</td>
+                                        <td>재난안전 상황실 영상관제시스템 운영서버</td>
+                                        <td>6대</td>
+                                        <td>서버용</td>
+                                    </tr>
+                                    <tr>
+                                        <td>동국대학교</td>
+                                        <td>컴퓨터 공학부 실습 서버</td>
+                                        <td>1대</td>
+                                        <td>서버용</td>
+                                    </tr>
+                                    <tr>
+                                        <td>동명대학교</td>
+                                        <td>Hyper-V Guest OS</td>
+                                        <td>5대</td>
+                                        <td>WEB, DB 서버용</td>
+                                    </tr>
+                                    <tr>
+                                        <td>속초시청</td>
+                                        <td>공영주차장 CCTV 통합관제시스템</td>
+                                        <td>2대</td>
+                                        <td>대교CNS VMS OS</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <p class="text-muted"><strong>25만 건 이상의 누적 다운로드</strong></p>
+                            <p class="small text-muted">민간(iwinv) 클라우드PC VDI 서비스 개시</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Platform Tab -->
+            <div class="tab-pane fade show active" id="aiplatform" role="tabpanel" aria-labelledby="aiplatform-tab">
+                <div class="row g-4">
+                    <!-- 강진군청 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                        <div class="case-card">
+                            <div class="case-image">
+                                <img src="/img/case-stories/강진군청.png" alt="강진군청" class="img-fluid">
+                            </div>
+                            <div class="case-content p-4">
+                                <h5 class="case-title">강진군청</h5>
+                                <p class="case-subtitle text-muted small mb-2">챗봇을 넘어, 신청서 자동작성까지 수행하는 행정형 AI</p>
+                                <p class="case-description">빈집관리와 리모델링 신청절차 전용 도구를 개발하여 AI 챗봇 → Tools 호출 → RPA 연동 → 신청서 자동작성 흐름으로 업무를 연결</p>
+                                <ul class="case-features">
+                                    <li>민원인 절차 이해와 서류 준비 부담 감소</li>
+                                    <li>담당자 지원 업무 시간 단축</li>
+                                    <li>행정서비스 "정보 제공"에서 "업무 처리 지원"으로 고도화</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 한국수력원자력 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="case-card">
+                            <div class="case-image">
+                                <img src="/img/case-stories/한국수력원자력.png" alt="한국수력원자력" class="img-fluid">
+                            </div>
+                            <div class="case-content p-4">
+                                <h5 class="case-title">한국수력원자력</h5>
+                                <p class="case-subtitle text-muted small mb-2">'읽지 못하는 AI'에서, 실시간 대답하는 교육형 AI로 전환</p>
+                                <p class="case-description">문서 레이아웃 분석 모델과 멀티모달 지원 모델을 활용해 텍스트뿐만 아니라 시각자료 맥락까지 함께 해석</p>
+                                <ul class="case-features">
+                                    <li>강의자료 이해 기반 답변 정확도 향상</li>
+                                    <li>단순 키워드 검색이 아닌 맥락 기반 학습 지원</li>
+                                    <li>Graph RAG를 통해 강의 주제, 개념, 관련 문서 간 연결관계 반영</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 덕원산업 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="case-card">
+                            <div class="case-image">
+                                <img src="/img/case-stories/덕원산업.png" alt="덕원산업" class="img-fluid">
+                            </div>
+                            <div class="case-content p-4">
+                                <h5 class="case-title">덕원산업</h5>
+                                <p class="case-subtitle text-muted small mb-2">현장 검수·품질관리, OCR과 Vision AI로 자동 분석 체계 구축</p>
+                                <p class="case-description">OCR과 Vision LLM을 활용하여 현장 데이터 자동 분석하고 검수데이터와 시각 정보를 함께 해석하여 지능형 품질관리 체계 구축</p>
+                                <ul class="case-features">
+                                    <li>현장 검수 업무 속도와 일관성 향상</li>
+                                    <li>이미지·문서 혼합 데이터 분석 자동화</li>
+                                    <li>품질관리 업무 표준화 및 정확도 개선</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 오리지네이티드 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                        <div class="case-card">
+                            <div class="case-image">
+                                <img src="/img/case-stories/오리지네이티드.png" alt="오리지네이티드" class="img-fluid">
+                            </div>
+                            <div class="case-content p-4">
+                                <h5 class="case-title">오리지네이티드</h5>
+                                <p class="case-subtitle text-muted small mb-2">복잡한 태양광 업무 데이터를 연결한 업무형 문서생성 AI</p>
+                                <p class="case-description">별도의 업무 연산 처리 레이어를 통해 실제 업무에 필요한 계산 로직 수행하고 계산 결과를 바탕으로 기업 고유의 PowerPoint 템플릿에 맞춘 문서 자동 생성</p>
+                                <ul class="case-features">
+                                    <li>결과물 형식과 품질을 기업 표준에 맞게 일관되게 유지</li>
+                                    <li>담당자 계산과 작성 대신 검토와 의사결정에 집중</li>
+                                    <li>복잡한 연산 규칙과 회사 고유 문서 형식 반영</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KYOCERA건강검진센터 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="case-card">
+                            <div class="case-image">
+                                <img src="/img/case-stories/KYOCERA건강검진센터.png" alt="KYOCERA건강검진센터" class="img-fluid">
+                            </div>
+                            <div class="case-content p-4">
+                                <h5 class="case-title">KYOCERA건강검진센터</h5>
+                                <p class="case-subtitle text-muted small mb-2">대량 건강검진기록, 분석·리포트형 AI 자산으로 전환</p>
+                                <p class="case-description">건강검진 데이터를 AI 분석 가능 구조로 정리하고 기록에서 필요한 정보와 패턴을 빠르게 추출</p>
+                                <ul class="case-features">
+                                    <li>데이터 관리 효율 향상, 대량 기록 기반 분석</li>
+                                    <li>반복적 데이터 정리 업무 감소</li>
+                                    <li>단순 저장 데이터를 활용 가능한 의료·헬스케어 지식 자산으로 전환</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 비전아이티 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="case-card">
+                            <div class="case-image">
+                                <img src="/img/case-stories/비전아이티.png" alt="비전아이티" class="img-fluid">
+                            </div>
+                            <div class="case-content p-4">
+                                <h5 class="case-title">비전아이티</h5>
+                                <p class="case-subtitle text-muted small mb-2">설비관리지식, 담당자 경험 의존에서 AI 자동점검지원</p>
+                                <p class="case-description">도메인 특화 설비 DB와 QA 데이터를 바탕으로 설비 챗봇 구축하고 고장 데이터베이스와 과거 사례를 검색해 자동 점검 보고서 생성</p>
+                                <ul class="case-features">
+                                    <li>설비 관련 정보 접근 속도 향상</li>
+                                    <li>장애 원인 확인과 점검 보고 업무 효율화</li>
+                                    <li>숙련자 의존도 낮추고 지식의 재사용성 강화</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 교보증권 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                        <div class="case-card">
+                            <div class="case-image">
+                                <img src="/img/case-stories/교보증권.png" alt="교보증권" class="img-fluid">
+                            </div>
+                            <div class="case-content p-4">
+                                <h5 class="case-title">교보증권</h5>
+                                <p class="case-subtitle text-muted small mb-2">ESG·규제 대응 리포트, AI 평가 에이전트로 혁신</p>
+                                <p class="case-description">EEIOA 평가 기준을 반영한 AI 에이전트 적용, 관련 데이터와 기준 문서를 AI가 함께 참조하여 탄소배출량 자동 집계</p>
+                                <ul class="case-features">
+                                    <li>ESG 보고 준비 시간 단축, 수작업 집계 오류 가능성 감소</li>
+                                    <li>국제표준기준에 맞춘 리포트 초안 자동 생성</li>
+                                    <li>규제 대응형 보고체계 자동화로 업무 신뢰성과 일관성 향상</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Customer Logos Gallery -->
+<section class="customer-logos py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2>고객사 및 파트너</h2>
+            <p class="lead">공공기관과 기업을 아울러 100+ 고객사와 함께했습니다</p>
+        </div>
+
+        <div class="row g-3 justify-content-center">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up">
+                <div class="partner-logo">
+                    <img src="/img/customers/part_01.png" alt="고객사 로고">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="50">
+                <div class="partner-logo">
+                    <img src="/img/customers/part_02.png" alt="고객사 로고">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="100">
+                <div class="partner-logo">
+                    <img src="/img/customers/part_03.png" alt="고객사 로고">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="150">
+                <div class="partner-logo">
+                    <img src="/img/customers/part_04.png" alt="고객사 로고">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="partner-logo">
+                    <img src="/img/customers/part_05.png" alt="고객사 로고">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="250">
+                <div class="partner-logo">
+                    <img src="/img/customers/part_06.png" alt="고객사 로고">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="300">
+                <div class="partner-logo">
+                    <img src="/img/customers/part_07.png" alt="고객사 로고">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="350">
+                <div class="partner-logo">
+                    <img src="/img/customers/part_08.png" alt="고객사 로고">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="400">
+                <div class="partner-logo">
+                    <img src="/img/customers/part_09.png" alt="고객사 로고">
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2" data-aos="fade-up" data-aos-delay="450">
+                <div class="partner-logo">
+                    <img src="/img/customers/part_10.png" alt="고객사 로고">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="customers-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2>공공기관</h2>
+            <p class="lead">정부 및 공공기관의 디지털 전환을 지원합니다</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                <div class="customer-card">
+                    <h4>국방부</h4>
+                    <p class="text-muted">사지방 클라우드컴퓨팅 환경개선</p>
+                    <ul class="customer-features">
+                        <li>하모니카OS 12,500대 도입</li>
+                        <li>사이버지식정보방 PC 운영체제 전환</li>
+                        <li>원격 PC 통합 관리 서비스</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="customer-card">
+                    <h4>과학기술정보통신부</h4>
+                    <p class="text-muted">개방형 OS 도입 시범사업 및 기술 지원</p>
+                    <ul class="customer-features">
+                        <li>개방형 OS 도입 시범사업</li>
+                        <li>하모니카 보급 확산 지원</li>
+                        <li>문서 호환성 조사 및 개선</li>
+                        <li>SW 기술확산 지원사업</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="customer-card">
+                    <h4>한국전자통신연구원</h4>
+                    <p class="text-muted">오픈소스 거버넌스 및 라이선스 정책 연구</p>
+                    <ul class="customer-features">
+                        <li>오픈소스커뮤니티거버넌스 보고서 (2016)</li>
+                        <li>오픈소스 라이선스 정책 수립 연구 (2018)</li>
+                        <li>오픈소스 관리 솔루션 구축 (2018)</li>
+                        <li>오픈소스거버넌스 MEC (2021)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                <div class="customer-card">
+                    <h4>정보통신산업진흥원</h4>
+                    <p class="text-muted">공개SW 정책 및 생태계 조성 지원</p>
+                    <ul class="customer-features">
+                        <li>공개SW 기술확산 지원사업</li>
+                        <li>오픈소스 거버넌스 가이드 고도화</li>
+                        <li>거버넌스 아카데미 운영</li>
+                        <li>SW 자원프라자 운영</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="customer-card">
+                    <h4>국방전산원</h4>
+                    <p class="text-muted">원격지 OS 관리 시스템</p>
+                    <ul class="customer-features">
+                        <li>격오지 개방형 OS 원격 관리</li>
+                        <li>온프레미스 환경 개선</li>
+                        <li>유지관리 용역</li>
+                        <li>보안성 강화 솔루션</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="customer-card">
+                    <h4>금융결제원</h4>
+                    <p class="text-muted">CMS 개발 및 시스템 구축</p>
+                    <ul class="customer-features">
+                        <li>CMS 시스템 개발</li>
+                        <li>금융 보안 솔루션</li>
+                        <li>오픈소스 기반 플랫폼</li>
+                        <li>결제 시스템 고도화</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="customers-section bg-light py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2>주요 기업</h2>
+            <p class="lead">대기업 및 중견기업의 기술 혁신을 지원합니다</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                <div class="customer-card">
+                    <h4>오리지네이티드</h4>
+                    <p class="text-muted">태양광 업무 기반 문서생성 AI (2026)</p>
+                    <ul class="customer-features">
+                        <li>태양광 업무 기반 문서생성 AI 서비스</li>
+                        <li>자동화 문서 작성 시스템</li>
+                        <li>AI 언어 모델 기반 플랫폼</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="customer-card">
+                    <h4>덕원산업</h4>
+                    <p class="text-muted">제조 AI 검수·품질관리 (2026)</p>
+                    <ul class="customer-features">
+                        <li>제조 AI 검수·품질관리 시스템</li>
+                        <li>AI 비전 검사 솔루션</li>
+                        <li>품질 관리 프로세스 자동화</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="customer-card">
+                    <h4>한국수력원자력</h4>
+                    <p class="text-muted">스마트 이러닝 AI 챗봇 서비스 (2026)</p>
+                    <ul class="customer-features">
+                        <li>스마트 이러닝 AI 챗봇 서비스 구축</li>
+                        <li>AI 기반 교육 플랫폼</li>
+                        <li>실시간 학습 시스템</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                <div class="customer-card">
+                    <h4>사회보장원</h4>
+                    <p class="text-muted">우분투서버 AI 추론서버 (2026)</p>
+                    <ul class="customer-features">
+                        <li>우분투서버 AI 추론서버 구축</li>
+                        <li>GPU 서버 인프라 구축</li>
+                        <li>딥러닝 모델 최적화</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="customer-card">
+                    <h4>비전아이티</h4>
+                    <p class="text-muted">AI 설비관리 플랫폼 (2025)</p>
+                    <ul class="customer-features">
+                        <li>AI 설비관리 플랫폼 AIRUN 구축</li>
+                        <li>AI 기반 예지 보전 솔루션</li>
+                        <li>실시간 설비 모니터링</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="customer-card">
+                    <h4>교보증권</h4>
+                    <p class="text-muted">ESG·규제 대응 리포트 AI 평가 (2025)</p>
+                    <ul class="customer-features">
+                        <li>ESG 규제 대응 리포트 AI 평가 에이전트</li>
+                        <li>AI 기반 리포트 분석</li>
+                        <li>규제 리스크 평가</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                <div class="customer-card">
+                    <h4>위세아이텍</h4>
+                    <p class="text-muted">AI 프레임워크 리눅스 서버 (2025)</p>
+                    <ul class="customer-features">
+                        <li>AI 프레임워크 리눅스 서버 기술지원</li>
+                        <li>GPU 서버 최적화</li>
+                        <li>AI 인프라 구축 컨설팅</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="customer-card">
+                    <h4>유큐브</h4>
+                    <p class="text-muted">WORM OS & CUBEi OS 개발 (2024-2025)</p>
+                    <ul class="customer-features">
+                        <li>WORM OS 개발 사업 (2024)</li>
+                        <li>CUBEi OS 개발 사업 (2025)</li>
+                        <li>보안 OS 커널 기술</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="customer-card">
+                    <h4>라온시큐어</h4>
+                    <p class="text-muted">오픈소스 거버넌스 컨설팅 (2024)</p>
+                    <ul class="customer-features">
+                        <li>오픈소스 거버넌스 컨설팅</li>
+                        <li>라이선스 정책 수립</li>
+                        <li>거버넌스 체계 구축</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ else if eq .Section "news" }}
+<section class="news-list py-5">
+    <div class="container">
+        <div class="row">
+            {{ range .Pages }}
+            <div class="col-lg-4 col-md-6 mb-4 news-item" data-aos="fade-up">
+                <div class="card news-card h-100">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">{{ .Params.category }}</span>
+                        <h5 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+                        <p class="text-muted small mb-3">{{ .Date.Format "2006-01-02" }}</p>
+                        <p class="card-text">{{ .Description }}</p>
+                        <a href="{{ .Permalink }}" class="btn btn-sm btn-outline-primary mt-2">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ else if eq .Section "contact" }}
+<section class="contact-info py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <div class="contact-details">
+                    <h3 class="mb-4">연락 정보</h3>
+
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-building fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">회사명</h5>
+                                <p class="text-muted mb-0">(주)인베슘</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">전화</h5>
+                                <p class="text-muted mb-0">02-2039-3977</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">이메일</h5>
+                                <p class="text-muted mb-0">sales@invesume.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <div class="contact-form-wrapper">
+                    <h3 class="mb-4">문의하기</h3>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">이름 *</label>
+                            <input type="text" class="form-control" id="name" name="name" required data-fs-field>
+                            <span class="text-danger small d-none" data-fs-error="name"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">이메일 *</label>
+                            <input type="email" class="form-control" id="email" name="email" required data-fs-field>
+                            <span class="text-danger small d-none" data-fs-error="email"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">문의 내용 *</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required data-fs-field></textarea>
+                            <span class="text-danger small d-none" data-fs-error="message"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" data-fs-submit-btn>
+                            <span class="btn-text">문의 보내기</span>
+                            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        </button>
+                    </form>
+
+                    <!-- Success Modal -->
+                    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title" id="successModalLabel">문의 접수 완료</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="mb-3">
+                                        <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+                                    </div>
+                                    <h4 class="mb-3">문의가 성공적으로 전송되었습니다!</h4>
+                                    <p class="text-muted">보내주신 문의 내용을 확인하고, 빠른 시일 내에 담당자가 답변 드리겠습니다.</p>
+                                    <p class="text-muted small mb-0">문의 번호: <span id="inquiry-id"></span></p>
+                                </div>
+                                <div class="modal-footer border-0 justify-content-center">
+                                    <button type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Error Modal -->
+                    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title" id="errorModalLabel">전송 실패</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="mb-3">
+                                        <i class="fas fa-exclamation-circle text-danger" style="font-size: 4rem;"></i>
+                                    </div>
+                                    <h4 class="mb-3">전송 중 오류가 발생했습니다</h4>
+                                    <p class="text-muted">잠시 후 다시 시도해 주시거나, 아래 연락처로 직접 문의해 주세요.</p>
+                                    <p class="text-muted small mb-0">
+                                        <i class="fas fa-phone me-2"></i>02-2039-3977<br>
+                                        <i class="fas fa-envelope me-2"></i>sales@invesume.com
+                                    </p>
+                                </div>
+                                <div class="modal-footer border-0 justify-content-center">
+                                    <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+                    formspree('initForm', {
+                        formElement: '#contact-form',
+                        formId: 'mbdpedbd',
+                        beforeSubmit: function() {
+                            const btn = document.querySelector('#contact-form [data-fs-submit-btn]');
+                            const btnText = btn.querySelector('.btn-text');
+                            const spinner = btn.querySelector('.spinner-border');
+                            btn.disabled = true;
+                            btnText.classList.add('d-none');
+                            spinner.classList.remove('d-none');
+                        },
+                        onSuccess: function() {
+                            const btn = document.querySelector('#contact-form [data-fs-submit-btn]');
+                            const btnText = btn.querySelector('.btn-text');
+                            const spinner = btn.querySelector('.spinner-border');
+                            btn.disabled = false;
+                            btnText.classList.remove('d-none');
+                            spinner.classList.add('d-none');
+
+                            // Generate inquiry ID
+                            const inquiryId = 'INV-' + Date.now().toString(36).toUpperCase();
+                            document.getElementById('inquiry-id').textContent = inquiryId;
+
+                            // Show success modal
+                            const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                            successModal.show();
+
+                            // Reset form
+                            document.getElementById('contact-form').reset();
+                        },
+                        onError: function() {
+                            const btn = document.querySelector('#contact-form [data-fs-submit-btn]');
+                            const btnText = btn.querySelector('.btn-text');
+                            const spinner = btn.querySelector('.spinner-border');
+                            btn.disabled = false;
+                            btnText.classList.remove('d-none');
+                            spinner.classList.add('d-none');
+
+                            // Show error modal
+                            const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+                            errorModal.show();
+                        }
+                    });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ else }}
+<section class="section-header py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>{{ .Title }}</h1>
+                <p class="lead">{{ .Params.description | default "섹션 페이지" }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}

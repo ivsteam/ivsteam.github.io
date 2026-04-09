@@ -1,0 +1,457 @@
+{{ define "main" }}
+<section class="product-detail-section py-5">
+    <div class="container">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">홈</a></li>
+                <li class="breadcrumb-item"><a href="/products/">제품&서비스</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+            </ol>
+        </nav>
+
+        <!-- Product Header -->
+        <div class="row mb-5">
+            <div class="col-lg-8">
+                <h1 class="fw-bold mb-3" style="color: var(--primary-color); font-size: 2rem;">{{ .Title }}</h1>
+                {{ if .Params.description }}
+                <p class="lead text-muted mb-4">{{ .Params.description }}</p>
+                {{ end }}
+                {{ if .Params.category }}
+                <div class="mb-3">
+                    {{ if eq .Params.category "ai-platform" }}
+                    <span class="badge bg-primary fs-6">AI Platform</span>
+                    {{ else if eq .Params.category "os" }}
+                    <span class="badge bg-success fs-6">OS</span>
+                    {{ else if eq .Params.category "consulting" }}
+                    <span class="badge bg-info fs-6">Consulting</span>
+                    {{ else }}
+                    <span class="badge bg-secondary fs-6">{{ .Params.category }}</span>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+            <div class="col-lg-4">
+                {{ if .Params.thumbnail }}
+                <div class="product-thumbnail">
+                    <img src="{{ .Params.thumbnail }}" alt="{{ .Title }}" class="img-fluid rounded shadow">
+                </div>
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- Product Content -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="product-content">
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Products Button -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <a href="/products/" class="btn btn-outline-primary">
+                    <i class="fas fa-arrow-left me-2"></i>제품&서비스 목록으로
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.product-detail-section {
+    background-color: var(--white);
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.breadcrumb-item a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: var(--text-gray);
+}
+
+.product-thumbnail img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-thumbnail img:hover {
+    transform: scale(1.02);
+}
+
+.product-content {
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+.product-content h1 {
+    color: var(--primary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.product-content h2 {
+    color: var(--primary-color);
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.product-content h3 {
+    color: var(--secondary-color);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.product-content h4 {
+    color: var(--text-dark);
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.product-content ul, .product-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.product-content li {
+    margin-bottom: 0.5rem;
+}
+
+.product-content strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.product-content table {
+    width: 100%;
+    margin: 2rem 0;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-content th {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.product-content td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.product-content tr:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+.product-content tr:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.product-content a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.product-content a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+/* Problem Cards */
+.problem-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.problem-percentage {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--danger-color);
+    margin-bottom: 0.5rem;
+}
+
+.problem-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.25rem;
+}
+
+.problem-desc {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+
+/* Tuning Steps */
+.tuning-step {
+    background: var(--light-bg);
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    height: 100%;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--accent-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.step-title {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.step-desc {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    line-height: 1.4;
+}
+
+/* Security Levels */
+.security-level {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.level-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+.level-1 {
+    background: var(--success-color);
+}
+
+.level-2 {
+    background: var(--warning-color);
+}
+
+.level-3 {
+    background: var(--danger-color);
+}
+
+/* Security Flow */
+.security-flow {
+    background: var(--light-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.flow-step {
+    background: var(--white);
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.flow-step.success {
+    background: var(--success-color);
+    color: var(--white);
+}
+
+.flow-arrow {
+    text-align: center;
+    color: var(--text-gray);
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.feature-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+/* Comparison Table */
+.comparison-table {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-table thead {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.comparison-table th {
+    padding: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.comparison-table td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.highlight-row {
+    background: rgba(59, 130, 246, 0.1);
+    font-weight: 600;
+}
+
+/* Screenshot Cards */
+.screenshot-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.screenshot-card:hover {
+    transform: scale(1.02);
+}
+
+.screenshot-card img {
+    width: 100%;
+    height: auto;
+}
+
+.screenshot-caption {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: var(--light-bg);
+}
+
+/* Contact Cards */
+.contact-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.contact-card i {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.contact-card h5 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.contact-card a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+/* Product content images */
+.product-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem 0;
+}
+
+.product-content p img {
+    display: block;
+    margin: 1.5rem auto;
+}
+</style>
+{{ end }}

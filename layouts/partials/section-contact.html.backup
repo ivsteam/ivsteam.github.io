@@ -1,0 +1,204 @@
+---
+title: "연락처"
+date: 2025-01-08
+draft: false
+type: "contact"
+description: "인베슘에 문의하기"
+---
+
+{{ define "main" }}
+<!-- Contact Section Header -->
+<section class="contact-header py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h1>연락처</h1>
+                <p class="lead">인베슘의 솔루션에 관심이 있으시다면 언제든 문의해주세요</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="contact-info py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Details -->
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <div class="contact-details">
+                    <h3 class="mb-4">연락 정보</h3>
+
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-building fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">회사명</h5>
+                                <p class="text-muted mb-0">(주)인베슘</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">주소</h5>
+                                <p class="text-muted mb-0">서울시 서초구 사임당로8길 17, 201호</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">전화</h5>
+                                <p class="text-muted mb-0">02-2039-3977</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">이메일</h5>
+                                <p class="text-muted mb-0">sales@invesume.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-globe fa-2x text-primary"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">웹사이트</h5>
+                                <p class="text-muted mb-0">www.invesume.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <div class="contact-form-wrapper">
+                    <h3 class="mb-4">문의하기</h3>
+                    <form class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">이름 *</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="company" class="form-label">회사명</label>
+                            <input type="text" class="form-control" id="company">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">이메일 *</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">연락처</label>
+                            <input type="tel" class="form-control" id="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">문의 유형</label>
+                            <select class="form-select" id="subject">
+                                <option value="general">일반 문의</option>
+                                <option value="product">제품 문의</option>
+                                <option value="support">기술 지원</option>
+                                <option value="partnership">파트너십</option>
+                                <option value="other">기타</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">문의 내용 *</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">문의 보내기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section bg-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12" data-aos="fade-up">
+                <h3 class="text-center mb-4">오시는 길</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.8288742554496!2d127.02434531530465!3d37.48486897981253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca95e8c8f9c85%3A0x9b5e8c5e8c8f9c85!2z7JWE7LK07ISc7Jq4IOygnOyEnOymeA!5e0!3m2!1sko!2skr!4v1620000000000!5m2!1sko!2skr"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Community Section -->
+<section class="community-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h3 class="mb-4">커뮤니티</h3>
+                <p class="lead text-muted mb-5">인베슘의 오픈소스 커뮤니티에 참여하세요</p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="community-card text-center p-4">
+                    <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+                    <h5>하모니카 공식 웹사이트</h5>
+                    <p class="text-muted mb-3">한국형 리눅스 OS 프로젝트</p>
+                    <a href="https://hamonikr.org" target="_blank" class="btn btn-outline-primary btn-sm">방문하기</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="community-card text-center p-4">
+                    <i class="fab fa-youtube fa-3x text-danger mb-3"></i>
+                    <h5>YouTube 채널</h5>
+                    <p class="text-muted mb-3">하모니카OS 공식 채널</p>
+                    <a href="https://youtube.com/hamonikros" target="_blank" class="btn btn-outline-primary btn-sm">구독하기</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="community-card text-center p-4">
+                    <i class="fab fa-github fa-3x text-dark mb-3"></i>
+                    <h5>GitHub</h5>
+                    <p class="text-muted mb-3">오픈소스 프로젝트</p>
+                    <a href="https://github.com/hamonikr" target="_blank" class="btn btn-outline-primary btn-sm">보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Contact form submission handler
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('문의가 접수되었습니다. 빠른 시일 내에 답변 드리겠습니다.');
+    this.reset();
+});
+</script>
+{{ end }}

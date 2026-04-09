@@ -1,0 +1,41 @@
+# Hugo build output
+public/
+resources/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# Backup files
+*.bak
+*.bak[0-9]
+*.tmp
+
+# Hugo build lock file
+.hugo_build.lock
+
+# NanoBanana output
+nanobanana-output/
+
+# Node modules (if using npm)
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
