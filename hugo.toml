@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = 'https://ivsteam.github.io/'
 defaultContentLanguage = 'ko'
 languageCode = 'ko-kr'
 title = '인베슘 Invesume - 공개SW 솔루션 전문기업'
