@@ -1,13 +1,13 @@
-baseURL = 'https://oss.invesume.com/'
+baseURL = '/'
 defaultContentLanguage = 'ko'
 languageCode = 'ko-kr'
-title = '인베슘 Invesume - 공개SW 솔루션 전문기업'
+title = '인베슘 Invesume - 오픈소스 전문기업'
 
 [languages.ko]
 languageName = '한국어'
 languageCode = 'ko-kr'
 weight = 1
-title = '인베슘 Invesume - 공개SW 솔루션 전문기업'
+title = '인베슘 Invesume - 오픈소스 전문기업'
 
 [languages.en]
 languageName = 'English'
@@ -17,9 +17,9 @@ title = 'Invesume - Open Source Software Solution Specialist'
 
 # 파라미터
 [params]
-  description = "인베슘은 공개SW 솔루션 전문기업입니다. 하모니카OS, AI.RUN/Hamonize Sovereign AI Platform, Hamonize 원격 OS 관리 서비스, Hamonia WebRTC 솔루션"
+  description = "인베슘은 오픈소스 전문기업입니다. 하모니카OS, AI.RUN/Hamonize Sovereign AI Platform"
   author = "인베슘 Invesume"
-  keywords = ["인베슘", "Invesume", "하모니카", "HamoniKR", "공개SW", "오픈소스", "리눅스", "Sovereign AI", "AI.RUN", "WebRTC", "공공기관 솔루션"]
+  keywords = ["인베슘", "Invesume", "하모니카", "HamoniKR", "공개SW", "오픈소스", "리눅스", "Sovereign AI", "AI.RUN"]
 
 # 메뉴
 [[menu.main]]

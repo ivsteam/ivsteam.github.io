@@ -160,27 +160,22 @@
     <div class="container">
         <div class="section-header text-center mb-5" data-aos="fade-up">
             <h2>제품 도입사례</h2>
-            <p class="lead">인베슘의 솔루션을 통해 비즈니스 혁신을 이룬 성공 사례</p>
         </div>
 
         <!-- Tabs Navigation -->
-        <ul class="nav nav-tabs justify-content-center mb-4" id="caseStudiesTabs" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="hamonikr-tab" data-bs-toggle="tab" data-bs-target="#hamonikr" type="button" role="tab" aria-controls="hamonikr" aria-selected="false">
-                    <i class="fas fa-desktop me-2"></i>하모니카OS 도입사례
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="aiplatform-tab" data-bs-toggle="tab" data-bs-target="#aiplatform" type="button" role="tab" aria-controls="aiplatform" aria-selected="true">
-                    <i class="fas fa-robot me-2"></i>AI.RUN/Hamonize 도입사례
-                </button>
-            </li>
-        </ul>
+        <div class="d-flex justify-content-end gap-2 mb-4" data-aos="fade-up">
+            <button class="btn btn-outline-primary btn-sm" id="hamonikr-tab-btn" onclick="showTab('hamonikr')">
+                <i class="fas fa-desktop me-2"></i>하모니카OS
+            </button>
+            <button class="btn btn-primary btn-sm active" id="aiplatform-tab-btn" onclick="showTab('aiplatform')">
+                <i class="fas fa-robot me-2"></i>AI.RUN/Hamonize
+            </button>
+        </div>
 
         <!-- Tabs Content -->
         <div class="tab-content" id="caseStudiesTabsContent">
             <!-- HamoniKR OS Tab -->
-            <div class="tab-pane fade" id="hamonikr" role="tabpanel" aria-labelledby="hamonikr-tab">
+            <div class="tab-pane" id="hamonikr" style="display: none;">
                 <div class="row">
                     <div class="col-12">
                         <div class="table-responsive">
@@ -316,7 +311,7 @@
             </div>
 
             <!-- AI Platform Tab -->
-            <div class="tab-pane fade show active" id="aiplatform" role="tabpanel" aria-labelledby="aiplatform-tab">
+            <div class="tab-pane show active" id="aiplatform" style="display: block;">
                 <div class="row g-4">
                     <!-- 강진군청 -->
                     <div class="col-lg-4 col-md-6" data-aos="fade-up">
@@ -726,6 +721,55 @@
         </div>
     </div>
 </section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('페이지 로드 완료');
+
+    // 탭 전환 함수
+    window.showTab = function(tabName) {
+        console.log('탭 전환:', tabName);
+
+        // 모든 탭 숨기기
+        var hamonikrTab = document.getElementById('hamonikr');
+        var aiplatformTab = document.getElementById('aiplatform');
+
+        if (hamonikrTab) hamonikrTab.style.display = 'none';
+        if (aiplatformTab) aiplatformTab.style.display = 'none';
+
+        // 모든 버튼에서 active 클래스 제거 및 스타일 변경
+        var hamonikrBtn = document.getElementById('hamonikr-tab-btn');
+        var aiplatformBtn = document.getElementById('aiplatform-tab-btn');
+
+        if (hamonikrBtn) {
+            hamonikrBtn.classList.remove('btn-primary', 'active');
+            hamonikrBtn.classList.add('btn-outline-primary');
+        }
+
+        if (aiplatformBtn) {
+            aiplatformBtn.classList.remove('btn-primary', 'active');
+            aiplatformBtn.classList.add('btn-outline-primary');
+        }
+
+        // 선택된 탭 표시
+        var selectedTab = document.getElementById(tabName);
+        if (selectedTab) {
+            selectedTab.style.display = 'block';
+        }
+
+        // 선택된 버튼에 active 클래스 및 스타일 적용
+        var selectedBtn = document.getElementById(tabName + '-tab-btn');
+        if (selectedBtn) {
+            selectedBtn.classList.remove('btn-outline-primary');
+            selectedBtn.classList.add('btn-primary', 'active');
+        }
+
+        console.log('탭 전환 완료');
+    };
+
+    console.log('showTab 함수 정의 완료');
+});
+</script>
 
 {{ else if eq .Section "news" }}
 <section class="news-list py-5">
