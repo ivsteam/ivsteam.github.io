@@ -1,13 +1,13 @@
 /* ============================================
    인베슘 Invesume - Custom Styles
-   Blue & Professional Theme
+   Royal Indigo Theme
    ============================================ */
 
 /* Root Variables */
 :root {
-    --primary-color: #0a2540;      /* Deep Blue */
-    --secondary-color: #1e3a5f;    /* Navy Blue */
-    --accent-color: #3b82f6;       /* Light Blue */
+    --primary-color: #3730a3;      /* Dark Indigo */
+    --secondary-color: #4338ca;    /* Indigo */
+    --accent-color: #6366f1;       /* Light Indigo */
     --success-color: #10b981;      /* Green */
     --warning-color: #f59e0b;      /* Orange */
     --danger-color: #ef4444;       /* Red */
@@ -88,7 +88,7 @@ a:hover {
 }
 
 .navbar.scrolled {
-    background-color: rgba(10, 37, 64, 0.98);
+    background-color: rgba(55, 48, 163, 0.98);
     padding: 0.75rem 0;
 }
 
@@ -724,11 +724,11 @@ button:focus {
 }
 
 .tag-ai {
-    background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+    background: linear-gradient(135deg, #4338ca 0%, #6366f1 100%);
 }
 
 .tag-os {
-    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%);
 }
 
 .tag-service {
@@ -744,7 +744,7 @@ button:focus {
 }
 
 .tag-development {
-    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    background: linear-gradient(135deg, #3730a3 0%, #4338ca 100%);
 }
 
 .tag-research {
@@ -792,7 +792,7 @@ button:focus {
     font-weight: 700;
     font-size: 1rem;
     border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(10, 37, 64, 0.3);
+    box-shadow: 0 4px 15px rgba(55, 48, 163, 0.3);
     border: 3px solid var(--white);
 }
 
@@ -1763,7 +1763,7 @@ button:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(10, 37, 64, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(55, 48, 163, 0.05) 0%, rgba(67, 56, 202, 0.05) 100%);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
