@@ -1,8 +1,20 @@
 baseURL = '/'
+defaultContentLanguage = 'ko'
 languageCode = 'ko-kr'
-languageName = 'Korean'
 title = '인베슘 Invesume - 공개SW 솔루션 전문기업'
 theme = ''
+
+[languages.ko]
+languageName = '한국어'
+languageCode = 'ko-kr'
+weight = 1
+title = '인베슘 Invesume - 공개SW 솔루션 전문기업'
+
+[languages.en]
+languageName = 'English'
+languageCode = 'en'
+weight = 2
+title = 'Invesume - Open Source Software Solution Specialist'
 
 # 파라미터
 [params]
@@ -46,6 +58,7 @@ theme = ''
 [build]
   [build.buildOptions]
     enableGitInfo = true
+  future = true
 
 # 출력 포맷
 [outputs]

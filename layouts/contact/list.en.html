@@ -1,0 +1,281 @@
+{{ define "main" }}
+<!-- Contact Information Section -->
+<section class="contact-info py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Left: Video and Downloads -->
+            <div class="col-lg-6 mb-4" data-aos="fade-right">
+                <!-- Company Introduction Video -->
+                <div class="video-container mb-4">
+                    <h3 class="mb-3" style="color: var(--primary-color);">
+                        <i class="fas fa-play-circle me-2" style="color: var(--accent-color);"></i>Company Introduction Video
+                    </h3>
+                    <div class="video-wrapper ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/xOl2KeNCPLs" title="Invesume Company Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Download Section -->
+                <div class="downloads-container">
+                    <h3 class="mb-3" style="color: var(--primary-color);">
+                        <i class="fas fa-file-pdf me-2" style="color: var(--accent-color);"></i>Brochures
+                    </h3>
+
+                    <div class="d-flex flex-column gap-3">
+                        <!-- Company Introduction -->
+                        <div class="download-card-full">
+                            <div class="d-flex align-items-center">
+                                <div class="download-icon-large me-3">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="download-title-full mb-0">Invesume Company Brochure</h6>
+                                </div>
+                                <a href="/docs/invesume-company-introduction.pdf" class="btn btn-download-full" target="_blank" rel="noopener">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Open Source Consulting -->
+                        <div class="download-card-full">
+                            <div class="d-flex align-items-center">
+                                <div class="download-icon-large me-3">
+                                    <i class="fas fa-code-branch"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="download-title-full mb-0">Open Source Consulting Guide</h6>
+                                </div>
+                                <a href="/docs/opensource-consulting-guide-v1.2.pdf" class="btn btn-download-full" target="_blank" rel="noopener">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Hamonize AI Platform -->
+                        <div class="download-card-full">
+                            <div class="d-flex align-items-center">
+                                <div class="download-icon-large me-3">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="download-title-full mb-0">Hamonize Sovereign AI Platform</h6>
+                                </div>
+                                <a href="/docs/hamonize-sovereign-ai-platform.pdf" class="btn btn-download-full" target="_blank" rel="noopener">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- HamoniKR OS -->
+                        <div class="download-card-full">
+                            <div class="d-flex align-items-center">
+                                <div class="download-icon-large me-3">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <h6 class="download-title-full mb-0">HamoniKR OS Brochure</h6>
+                                </div>
+                                <a href="/docs/hamonikr-os-brochure.pdf" class="btn btn-download-full" target="_blank" rel="noopener">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Contact Form with Formspree -->
+            <div class="col-lg-6 mb-4" data-aos="fade-left">
+                <div class="contact-form-wrapper">
+                    <h3 class="mb-4">Contact Us</h3>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" class="form-control" id="name" name="name" required data-fs-field>
+                            <span class="text-danger small d-none" data-fs-error="name"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" class="form-control" id="email" name="email" required data-fs-field>
+                            <span class="text-danger small d-none" data-fs-error="email"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required data-fs-field></textarea>
+                            <span class="text-danger small d-none" data-fs-error="message"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100" data-fs-submit-btn>
+                            <span class="btn-text">Send Message</span>
+                            <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                        </button>
+                    </form>
+
+                    <!-- Success Modal -->
+                    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title" id="successModalLabel">Inquiry Submitted Successfully</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="mb-3">
+                                        <i class="fas fa-check-circle text-success" style="font-size: 4rem;"></i>
+                                    </div>
+                                    <h4 class="mb-3">Your inquiry has been successfully submitted!</h4>
+                                    <p class="text-muted">We will review your inquiry and get back to you as soon as possible.</p>
+                                    <p class="text-muted small mb-0">Inquiry ID: <span id="inquiry-id"></span></p>
+                                </div>
+                                <div class="modal-footer border-0 justify-content-center">
+                                    <button type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">Confirm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Error Modal -->
+                    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header border-0">
+                                    <h5 class="modal-title" id="errorModalLabel">Submission Failed</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="mb-3">
+                                        <i class="fas fa-exclamation-circle text-danger" style="font-size: 4rem;"></i>
+                                    </div>
+                                    <h4 class="mb-3">An error occurred during submission</h4>
+                                    <p class="text-muted">Please try again later or contact us directly:</p>
+                                    <p class="text-muted small mb-0">
+                                        <i class="fas fa-phone me-2"></i>02-2039-3977<br>
+                                        <i class="fas fa-envelope me-2"></i>sales@invesume.com
+                                    </p>
+                                </div>
+                                <div class="modal-footer border-0 justify-content-center">
+                                    <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+                    formspree('initForm', {
+                        formElement: '#contact-form',
+                        formId: 'mbdpedbd',
+                        beforeSubmit: function() {
+                            const btn = document.querySelector('#contact-form [data-fs-submit-btn]');
+                            const btnText = btn.querySelector('.btn-text');
+                            const spinner = btn.querySelector('.spinner-border');
+                            btn.disabled = true;
+                            btnText.classList.add('d-none');
+                            spinner.classList.remove('d-none');
+                        },
+                        onSuccess: function() {
+                            const btn = document.querySelector('#contact-form [data-fs-submit-btn]');
+                            const btnText = btn.querySelector('.btn-text');
+                            const spinner = btn.querySelector('.spinner-border');
+                            btn.disabled = false;
+                            btnText.classList.remove('d-none');
+                            spinner.classList.add('d-none');
+
+                            const inquiryId = 'INV-' + Date.now().toString(36).toUpperCase();
+                            document.getElementById('inquiry-id').textContent = inquiryId;
+
+                            const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+                            successModal.show();
+
+                            document.getElementById('contact-form').reset();
+                        },
+                        onError: function() {
+                            const btn = document.querySelector('#contact-form [data-fs-submit-btn]');
+                            const btnText = btn.querySelector('.btn-text');
+                            const spinner = btn.querySelector('.spinner-border');
+                            btn.disabled = false;
+                            btnText.classList.remove('d-none');
+                            spinner.classList.add('d-none');
+
+                            const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+                            errorModal.show();
+                        }
+                    });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Video Container */
+.video-wrapper {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Full Width Download Cards */
+.download-card-full {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.download-card-full:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    border-color: var(--accent-color);
+}
+
+.download-icon-large {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.download-icon-large i {
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+.download-title-full {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.btn-download-full {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-download-full:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+</style>
+{{ end }}

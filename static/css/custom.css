@@ -275,9 +275,10 @@ section {
 }
 
 .stat-label {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: var(--text-gray);
     font-weight: 500;
+    white-space: nowrap;
 }
 
 /* Products Section */
@@ -1558,6 +1559,8 @@ button:focus {
     font-size: 0.9rem;
     line-height: 1.5;
     color: var(--text-dark);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .feature-item strong {
@@ -1634,6 +1637,7 @@ button:focus {
     justify-content: center;
     padding: 2rem !important;
     position: relative;
+    overflow: hidden;
 }
 
 .product-image img {

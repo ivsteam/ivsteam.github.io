@@ -1,5 +1,292 @@
 {{ define "main" }}
-<!-- Hero Section -->
+{{ if eq .Lang "en" }}
+<!-- English Homepage Content -->
+<section class="hero-section" style="margin-top: -120px; padding-top: 120px;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-up">
+                <h1>Opening Code to Empower the AI Era: Invesume</h1>
+                <p class="subtitle">12 Years of Open Source Leadership, Now with Sovereign AI</p>
+                <div class="hero-buttons mt-4">
+                    <a href="/en/products/" class="btn btn-primary btn-lg me-3">Learn More</a>
+                    <a href="/en/contact/" class="btn btn-outline-light btn-lg">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <div class="hero-video">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/xOl2KeNCPLs" title="Invesume Company Introduction" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="stat-card">
+                    <div class="stat-number">12+ Years</div>
+                    <div class="stat-label">Open Source Leadership</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="stat-card">
+                    <div class="stat-number">250K+</div>
+                    <div class="stat-label">Downloads (HamoniKR OS)</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="stat-card">
+                    <div class="stat-number">GS Grade 1</div>
+                    <div class="stat-label">Software Quality Certification</div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="stat-card">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Government/Public Partners</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title mb-4">About Invesume</h2>
+                <p class="lead">Invesume is a leading open-source solution provider with 12+ years of expertise. We offer Sovereign AI Platform, Open Source OS, Remote Management Solutions, and WebRTC Solutions.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card text-center p-4">
+                    <i class="fas fa-code fa-3x mb-3" style="color: var(--accent-color);"></i>
+                    <h5>Opening Code</h5>
+                    <p class="text-muted">Leading the open-source ecosystem innovation in Korea</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card text-center p-4">
+                    <i class="fas fa-brain fa-3x mb-3" style="color: var(--accent-color);"></i>
+                    <h5>Innovation</h5>
+                    <p class="text-muted">Continuous R&D investment to pioneer latest technologies</p>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card text-center p-4">
+                    <i class="fas fa-handshake fa-3x mb-3" style="color: var(--accent-color);"></i>
+                    <h5>Trust</h5>
+                    <p class="text-muted">12+ years of proven technology and government delivery records</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="products-section py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title mb-4">Products & Services</h2>
+                <p class="lead">Comprehensive open-source solutions for government and enterprises</p>
+            </div>
+        </div>
+
+        <!-- Product 1: AI.RUN / Hamonize -->
+        <div class="col-12 mb-5" data-aos="fade-up" id="ai-platform">
+            <div class="product-card-featured">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-4">
+                        <div class="product-image">
+                            <a href="https://hamonize.com" target="_blank" title="AI.RUN / Hamonize Details">
+                                <img src="/img/products/product-1-resized.jpg" alt="AI.RUN / Hamonize" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="product-content p-4">
+                            <span class="product-badge bg-primary">AI Platform</span>
+                            <h3 class="product-title">
+                                AI.RUN / Hamonize
+                            </h3>
+                            <h4 class="product-subtitle text-muted mb-3">Sovereign AI Platform</h4>
+                            <p class="product-description">
+                                A Sovereign AI platform that leverages ultra-large AI while keeping data within your organization.
+                                Guarantees enterprise data privacy and provides LLM services in on-premises environments.
+                            </p>
+                            <div class="product-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-shield-alt text-primary"></i>
+                                    <span><strong>Data Privacy Protection:</strong> Use AI on internal servers without data leakage</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-server text-primary"></i>
+                                    <span><strong>On-Premises Deployment:</strong> Supports closed network environments without internet connection</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-brain text-primary"></i>
+                                    <span><strong>Various LLM Support:</strong> Built-in open-source models like Llama 3, Qwen, Mixtral</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-tachometer-alt text-primary"></i>
+                                    <span><strong>GPU Orchestration:</strong> Efficient GPU resource management and model scheduling</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-code text-primary"></i>
+                                    <span><strong>RAG & Code Generation:</strong> Document search and code generation features</span>
+                                </div>
+                            </div>
+                            <div class="product-cta mt-4">
+                                <a href="https://hamonize.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                    <i class="fas fa-external-link-alt me-2"></i>Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 2: HamoniKR OS -->
+        <div class="col-12 mb-5" data-aos="fade-up" data-aos-delay="100" id="hamonikr-os">
+            <div class="product-card-featured">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-4">
+                        <div class="product-image">
+                            <a href="https://hamonikr.org" target="_blank" title="HamoniKR OS Details">
+                                <img src="/img/products/product-2-resized.png" alt="HamoniKR OS" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="product-content p-4">
+                            <span class="product-badge bg-success">OS</span>
+                            <h3 class="product-title">
+                                HamoniKR OS
+                            </h3>
+                            <h4 class="product-subtitle text-muted mb-3">Open Desktop OS</h4>
+                            <p class="product-description">
+                                An open operating system optimized for Korean users. With 250K+ downloads and GS Grade 1 certification,
+                                it supports digital transformation in public institutions and enterprises.
+                            </p>
+                            <div class="product-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-globe text-success"></i>
+                                    <span><strong>Perfect Korean Support:</strong> Korean input, fonts, and document compatibility</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-lock text-success"></i>
+                                    <span><strong>3-Stage Strong Security:</strong> Secure boot, secure storage, execution protection</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-certificate text-success"></i>
+                                    <span><strong>GS Grade 1 Certification:</strong> National certification, public institution supply record</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-file-alt text-success"></i>
+                                    <span><strong>Document Compatibility:</strong> Supports various document formats including HWP, MS Office</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-desktop text-success"></i>
+                                    <span><strong>Desktop Environment:</strong> Various desktop environments including GNOME, KDE</span>
+                                </div>
+                            </div>
+                            <div class="product-cta mt-4">
+                                <a href="https://hamonikr.org" target="_blank" rel="noopener noreferrer" class="btn btn-success">
+                                    <i class="fas fa-users me-2"></i>Visit Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 3: Open Source Governance Consulting -->
+        <div class="col-12 mb-5" data-aos="fade-up" data-aos-delay="200" id="consulting">
+            <div class="product-card-featured">
+                <div class="row g-0 align-items-center">
+                    <div class="col-md-4">
+                        <div class="product-image">
+                            <a href="/en/contact/" title="Contact for Consulting">
+                                <img src="/img/products/product-3-resized.png" alt="Open Source Consulting" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="product-content p-4">
+                            <span class="product-badge bg-info">Consulting</span>
+                            <h3 class="product-title">
+                                Open Source Governance Consulting
+                            </h3>
+                            <h4 class="product-subtitle text-muted mb-3">Open Source Software Project Consulting</h4>
+                            <p class="product-description">
+                                Professional consulting service supporting the entire process of open source software adoption and utilization.
+                                Helps public institutions and enterprises successfully implement open source software projects.
+                            </p>
+                            <div class="product-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-sitemap text-info"></i>
+                                    <span><strong>Open Source Governance:</strong> Establish and operate governance systems tailored to your organization</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-balance-scale text-info"></i>
+                                    <span><strong>License Compliance:</strong> Open source license review and compliance support</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-graduation-cap text-info"></i>
+                                    <span><strong>Education & Capacity Building:</strong> Open source utilization training programs</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-code-branch text-info"></i>
+                                    <span><strong>Technical Consulting:</strong> Open source technology stack selection and architecture design</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-users text-info"></i>
+                                    <span><strong>Community Building:</strong> Internal open source community creation and operational support</span>
+                                </div>
+                            </div>
+                            <div class="product-cta mt-4">
+                                <a href="/en/contact/" class="btn btn-info">
+                                    <i class="fas fa-envelope me-2"></i>Contact Us
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="/en/contact/" class="btn btn-primary btn-lg">Contact Us for More Information</a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center" data-aos="fade-up">
+                <h2 class="mb-4">Ready to Transform Your Digital Infrastructure?</h2>
+                <p class="lead mb-4">Partner with Invesume for your open-source and AI needs</p>
+                <a href="/en/contact/" class="btn btn-primary btn-lg me-3">Contact Us</a>
+                <a href="https://hamonikr.org" target="_blank" class="btn btn-outline-primary btn-lg">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+{{ else }}
+<!-- Korean Homepage Content (original) -->
 <section class="hero-section" style="margin-top: -120px; padding-top: 120px;">
     <div class="container">
         <div class="row align-items-center">
@@ -417,4 +704,5 @@
         </div>
     </div>
 </section>
+{{ end }}
 {{ end }}
