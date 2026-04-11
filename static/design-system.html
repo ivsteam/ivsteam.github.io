@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인베슘 디자인 시스템 | Invesume Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/design-system.css">
+</head>
+<body>
+    <div class="design-system">
+        <!-- Header -->
+        <header class="ds-header">
+            <h1>인베슘 디자인 시스템</h1>
+            <p>Invesume Design System & Design Tokens</p>
+            <p style="font-size: var(--font-size-base); color: var(--text-secondary);">일관된 사용자 경험을 위한 컴포넌트 라이브러리</p>
+        </header>
+
+        <!-- 1. Color Palette -->
+        <section class="ds-section">
+            <h2 class="ds-section-title">1. 컬러 팔레트 (Color Palette)</h2>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Primary Colors</h3>
+                <div class="color-grid">
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #1a8f7a;">
+                            #1a8f7a
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 500</div>
+                            <div class="color-hex">#1a8f7a</div>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #0f766e;">
+                            #0f766e
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 600</div>
+                            <div class="color-hex">#0f766e</div>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #081f19;">
+                            #081f19
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 800</div>
+                            <div class="color-hex">#081f19</div>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #002821;">
+                            #002821
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 900</div>
+                            <div class="color-hex">#002821</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Semantic Colors</h3>
+                <div class="color-grid">
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #0d8a61;">
+                            #0d8a61
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Success</div>
+                            <div class="color-hex">#0d8a61</div>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #f59e0b;">
+                            #f59e0b
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Warning</div>
+                            <div class="color-hex">#f59e0b</div>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #ef4444;">
+                            #ef4444
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Danger</div>
+                            <div class="color-hex">#ef4444</div>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #3b82f6;">
+                            #3b82f6
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Info</div>
+                            <div class="color-hex">#3b82f6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Neutral Colors</h3>
+                <div class="color-grid">
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #f1f5f9; color: #111827;">
+                            #f1f5f9
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 100</div>
+                            <div class="color-hex">#f1f5f9</div>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #e2e8f0;">
+                            #e2e8f0
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 200</div>
+                            <div class="color-hex">#e2e8f0</div>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #94a3b8;">
+                            #94a3b8
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 400</div>
+                            <div class="color-hex">#94a3b8</div>
+                        </div>
+                    </div>
+                    <div class="color-card">
+                        <div class="color-swatch" style="background: #475569;">
+                            #475569
+                        </div>
+                        <div class="color-info">
+                            <div class="color-name">Gray 600</div>
+                            <div class="color-hex">#475569</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Typography -->
+        <section class="ds-section">
+            <h2 class="ds-section-title">2. 타이포그래피 (Typography)</h2>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Heading Scale</h3>
+
+                <div class="type-scale">
+                    <div class="type-example">
+                        <h1>Heading 1</h1>
+                        <div class="type-meta">
+                            <span>font-size: 24px</span>
+                            <span>font-weight: var(--font-weight-bold) - 700</span>
+                        </div>
+                    </div>
+
+                    <div class="type-example">
+                        <h2>Heading 2</h2>
+                        <div class="type-meta">
+                            <span>font-size: 22px</span>
+                            <span>font-weight: var(--font-weight-bold) - 700</span>
+                        </div>
+                    </div>
+
+                    <div class="type-example">
+                        <h3>Heading 3</h3>
+                        <div class="type-meta">
+                            <span>font-size: 19px</span>
+                            <span>font-weight: var(--font-weight-bold) - 700</span>
+                        </div>
+                    </div>
+
+                    <div class="type-example">
+                        <h4>Heading 4</h4>
+                        <div class="type-meta">
+                            <span>font-size: 17px</span>
+                            <span>font-weight: var(--font-weight-bold) - 700</span>
+                        </div>
+                    </div>
+
+                    <div class="type-example">
+                        <h5>Heading 5</h5>
+                        <div class="type-meta">
+                            <span>font-size: 16px (본문과 같음, 굵게로 구분)</span>
+                            <span>font-weight: var(--font-weight-bold) - 700</span>
+                        </div>
+                    </div>
+
+                    <div class="type-example">
+                        <h6>Heading 6</h6>
+                        <div class="type-meta">
+                            <span>font-size: 16px (본문과 같음, 굵게로 구분)</span>
+                            <span>font-weight: var(--font-weight-bold) - 700</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Body Text</h3>
+                <div class="type-example">
+                    <p>본문 텍스트 예제입니다. var(--font-size-base) - 16px 크기를 사용하며, 줄 높이는 var(--line-height-normal) - 1.5입니다.</p>
+                    <div class="type-meta">
+                        <span>font-size: var(--font-size-base) - 16px</span>
+                        <span>line-height: var(--line-height-normal) - 1.5</span>
+                    </div>
+                </div>
+                <div class="type-example">
+                    <p style="font-size: var(--font-size-sm);">작은 텍스트 예제입니다. var(--font-size-sm) - 14px 크기입니다.</p>
+                    <div class="type-meta">
+                        <span>font-size: var(--font-size-sm) - 14px</span>
+                    </div>
+                </div>
+                <div class="type-example">
+                    <p style="font-size: var(--font-size-lg);">큰 텍스트 예제입니다. var(--font-size-lg) - 18px 크기입니다.</p>
+                    <div class="type-meta">
+                        <span>font-size: var(--font-size-lg) - 18px</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Font Weights</h3>
+                <div class="type-example">
+                    <p style="font-weight: var(--font-weight-light);">Light (300) - 가벼운 폰트 웨이트</p>
+                    <p style="font-weight: var(--font-weight-normal);">Normal (400) - 일반적인 폰트 웨이트</p>
+                    <p style="font-weight: var(--font-weight-medium);">Medium (500) - 중간 폰트 웨이트</p>
+                    <p style="font-weight: var(--font-weight-semibold);">Semibold (600) - 반굵은 폰트 웨이트</p>
+                    <p style="font-weight: var(--font-weight-bold);">Bold (700) - 굵은 폰트 웨이트</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Spacing -->
+        <section class="ds-section">
+            <h2 class="ds-section-title">3. 간격 (Spacing)</h2>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Spacing Scale</h3>
+
+                <div class="spacing-example">
+                    <div class="spacing-box">spacing-1</div>
+                    <span class="spacing-label">4px (0.25rem)</span>
+                </div>
+                <div class="spacing-example">
+                    <div class="spacing-box">spacing-2</div>
+                    <span class="spacing-label">8px (0.5rem)</span>
+                </div>
+                <div class="spacing-example">
+                    <div class="spacing-box">spacing-3</div>
+                    <span class="spacing-label">12px (0.75rem)</span>
+                </div>
+                <div class="spacing-example">
+                    <div class="spacing-box">spacing-4</div>
+                    <span class="spacing-label">16px (1rem)</span>
+                </div>
+                <div class="spacing-example">
+                    <div class="spacing-box">spacing-6</div>
+                    <span class="spacing-label">24px (1.5rem)</span>
+                </div>
+                <div class="spacing-example">
+                    <div class="spacing-box">spacing-8</div>
+                    <span class="spacing-label">32px (2rem)</span>
+                </div>
+                <div class="spacing-example">
+                    <div class="spacing-box">spacing-12</div>
+                    <span class="spacing-label">48px (3rem)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Buttons -->
+        <section class="ds-section">
+            <h2 class="ds-section-title">4. 버튼 (Buttons)</h2>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Button Variants</h3>
+                <div class="button-grid">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-success">Success Button</button>
+                    <button class="btn btn-outline">Outline Button</button>
+                    <button class="btn btn-ghost">Ghost Button</button>
+                </div>
+            </div>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Button Sizes</h3>
+                <div class="button-grid">
+                    <button class="btn btn-primary btn-sm">Small Button</button>
+                    <button class="btn btn-primary">Default Button</button>
+                    <button class="btn btn-primary btn-lg">Large Button</button>
+                </div>
+            </div>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Button States</h3>
+                <div class="button-grid">
+                    <button class="btn btn-primary">Default</button>
+                    <button class="btn btn-primary" disabled>Disabled</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Form Elements -->
+        <section class="ds-section">
+            <h2 class="ds-section-title">5. 폼 요소 (Form Elements)</h2>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Input Fields</h3>
+
+                <div class="form-group">
+                    <label class="form-label">기본 입력 필드</label>
+                    <input type="text" class="form-input" placeholder="텍스트를 입력하세요">
+                    <span class="form-help">도움말 텍스트입니다</span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">이메일 입력</label>
+                    <input type="email" class="form-input" placeholder="example@invesume.com">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">비밀번호 입력</label>
+                    <input type="password" class="form-input" placeholder="••••••••">
+                </div>
+            </div>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Select & Textarea</h3>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-label">드롭다운 선택</label>
+                        <select class="form-select">
+                            <option>옵션 1</option>
+                            <option>옵션 2</option>
+                            <option>옵션 3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">날짜 선택</label>
+                        <input type="date" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">텍스트 영역</label>
+                    <textarea class="form-textarea" placeholder="여러 줄 텍스트를 입력하세요"></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Cards -->
+        <section class="ds-section">
+            <h2 class="ds-section-title">6. 카드 (Cards)</h2>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Card Examples</h3>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="/img/products/product-1-resized.jpg" alt="AI Platform" class="card-image">
+                        <div class="card-body">
+                            <h4 class="card-title">AI.RUN / Hamonize</h4>
+                            <p class="card-text">Sovereign AI Platform - 데이터 프라이버시 기반 AI 플랫폼</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-sm">자세히 보기</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/img/products/product-2-resized.png" alt="HamoniKR OS" class="card-image">
+                        <div class="card-body">
+                            <h4 class="card-title">HamoniKR OS</h4>
+                            <p class="card-text">한국형 리눅스 데스크톱 OS - GS 인증 1등급</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary btn-sm">자세히 보기</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">오픈소스 컨설팅</h4>
+                            <p class="card-text">공개SW 기반 프로젝트 컨설팅 서비스</p>
+                            <span class="badge badge-primary">Consulting</span>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline btn-sm">문의하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Badges -->
+        <section class="ds-section">
+            <h2 class="ds-section-title">7. 배지 (Badges)</h2>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Badge Variants</h3>
+                <div class="button-grid">
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-secondary">Secondary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-light">Light</span>
+                    <span class="badge badge-outline">Outline</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Alerts -->
+        <section class="ds-section">
+            <h2 class="ds-section-title">8. 알림 (Alerts)</h2>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Alert Types</h3>
+
+                <div class="alert alert-success">
+                    <div class="alert-title">성공!</div>
+                    <p>작업이 성공적으로 완료되었습니다.</p>
+                </div>
+
+                <div class="alert alert-warning">
+                    <div class="alert-title">주의</div>
+                    <p>이 작업은 되돌릴 수 없습니다. 계속 진행하시겠습니까?</p>
+                </div>
+
+                <div class="alert alert-danger">
+                    <div class="alert-title">오류</div>
+                    <p>요청을 처리하는 동안 문제가 발생했습니다. 다시 시도해주세요.</p>
+                </div>
+
+                <div class="alert alert-info">
+                    <div class="alert-title">정보</div>
+                    <p>새로운 기능이 추가되었습니다. 자세히 알아보세요.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Border Radius -->
+        <section class="ds-section">
+            <h2 class="ds-section-title">9. 테두리 라운드 (Border Radius)</h2>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Radius Examples</h3>
+
+                <div style="display: flex; gap: var(--spacing-4); flex-wrap: wrap;">
+                    <div style="background: #1a8f7a; color: white; padding: var(--spacing-4); border-radius: var(--radius-sm);">
+                        radius-sm (4px)
+                    </div>
+                    <div style="background: #1a8f7a; color: white; padding: var(--spacing-4); border-radius: var(--radius-base);">
+                        radius-base (8px)
+                    </div>
+                    <div style="background: #1a8f7a; color: white; padding: var(--spacing-4); border-radius: var(--radius-md);">
+                        radius-md (12px)
+                    </div>
+                    <div style="background: #1a8f7a; color: white; padding: var(--spacing-4); border-radius: var(--radius-lg);">
+                        radius-lg (16px)
+                    </div>
+                    <div style="background: #1a8f7a; color: white; padding: var(--spacing-4); border-radius: var(--radius-xl);">
+                        radius-xl (24px)
+                    </div>
+                    <div style="background: #1a8f7a; color: white; padding: var(--spacing-4); border-radius: var(--radius-full);">
+                        radius-full
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Shadows -->
+        <section class="ds-section">
+            <h2 class="ds-section-title">10. 그림자 (Shadows)</h2>
+
+            <div class="ds-subsection">
+                <h3 class="ds-subsection-title">Shadow Examples</h3>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-6);">
+                    <div style="background: white; padding: var(--spacing-6); border-radius: var(--radius-md); box-shadow: var(--shadow-xs);">
+                        shadow-xs
+                    </div>
+                    <div style="background: white; padding: var(--spacing-6); border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                        shadow-sm
+                    </div>
+                    <div style="background: white; padding: var(--spacing-6); border-radius: var(--radius-md); box-shadow: var(--shadow-base);">
+                        shadow-base
+                    </div>
+                    <div style="background: white; padding: var(--spacing-6); border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        shadow-md
+                    </div>
+                    <div style="background: white; padding: var(--spacing-6); border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
+                        shadow-lg
+                    </div>
+                    <div style="background: white; padding: var(--spacing-6); border-radius: var(--radius-md); box-shadow: var(--shadow-xl);">
+                        shadow-xl
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer style="text-align: center; padding: var(--spacing-8); color: var(--text-tertiary);">
+            <p>&copy; 2026 Invesume. All rights reserved.</p>
+            <p style="font-size: var(--font-size-sm);">인베슘 디자인 시스템 v1.0.0</p>
+        </footer>
+    </div>
+
+    <script>
+        // Add hover interactions
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-2px)';
+            });
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Add focus tracking
+        document.querySelectorAll('.form-input, .form-select, .form-textarea').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.querySelector('.form-label')?.style.setProperty('color', '#1a8f7a');
+            });
+            input.addEventListener('blur', function() {
+                this.parentElement.querySelector('.form-label')?.style.setProperty('color', '#111827');
+            });
+        });
+    </script>
+</body>
+</html>
